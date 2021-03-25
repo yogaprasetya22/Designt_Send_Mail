@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send Massage</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="dist/sweetalert2.all.min.js"></script>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="border-box">
+          <h4>Dark Mode</h4>
+          <input type="checkbox" onclick="dm()" />
+        </div>
+        <div class="contackInfo">
+          <div>
+            <h2>Contack Info</h2>
+            <ul class="info">
+              <li>
+                <span><img src="img/location.png" alt="lokasi" /></span>
+                <span>
+                  Indonesia <br />
+                  Banten Tangerang Selatan <br />
+                  Bambuapus Pamulang
+                </span>
+              </li>
+              <li>
+                <span><img src="img/mail.png" alt="email" /></span>
+                <span> jagres3211@gmail.com </span>
+              </li>
+              <li>
+                <span><img src="img/whatsapp.png" alt="whatsapp" /></span>
+                <span> Klik jika ingin menghubungkan </span>
+              </li>
+            </ul>
+          </div>
+          <ul class="sci">
+            <li>
+              <a href="#"><img src="img/1.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/3.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="contackForm">
+          <h2>Kirim Pesan</h2>
+          <div class="formBox"><form action="">
+              <div class="inputBox w50">
+                <input type="text" id="fnama" required />
+                <span>Nama Depan</span>
+              </div>
+              <div class="inputBox w50">
+                <input type="text" id="lnama" required />
+                <span>Nama Belakang</span>
+              </div>
+              <div class="inputBox w50">
+                <input type="email" id="email" required />
+                <span>Email Address</span>
+              </div>
+              <div class="inputBox w50">
+                <input type="text" id="no" required />
+                <span>Mobile Number</span>
+              </div>
+              <div class="inputBox w100">
+                <textarea id="pesan" required></textarea>
+                <span>Write your message here</span>
+              </div></form>
+              <div class="inputBox w100">
+                <input type="submit" value="Send email" onclick="send()" />
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
